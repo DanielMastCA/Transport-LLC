@@ -98,8 +98,6 @@ GameObject:
   - component: {fileID: 9036253566048021789}
   - component: {fileID: 6808418869020584029}
   - component: {fileID: 1215113790537033555}
-  - component: {fileID: 1359469361482046774}
-  - component: {fileID: 8564881247592008571}
   m_Layer: 0
   m_Name: Truck
   m_TagString: Untagged
@@ -177,7 +175,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40baa525d09a32a4a9a7e5525745130a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceleration: 100000
+  torque: 5
+  breakForce: 10
+  reverseForce: 1
+  wheelTurnAccelerator: 1
+  modifier: 25000
 --- !u!114 &9036253566048021789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,54 +253,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5339272, y: 1.3649098}
   m_EdgeRadius: 0
---- !u!235 &1359469361482046774
-WheelJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5370775805445626822}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 6808418869020584029}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: -0.26912218, y: 0}
-  m_ConnectedAnchor: {x: 0.26912218, y: -0.00065639615}
-  m_Suspension:
-    m_DampingRatio: 0.7
-    m_Frequency: 2
-    m_Angle: 90
-  m_UseMotor: 1
-  m_Motor:
-    m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
---- !u!235 &8564881247592008571
-WheelJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5370775805445626822}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 6808418869020584029}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: -0.27291664, y: -0.9979375}
-  m_ConnectedAnchor: {x: 0.27291664, y: -1.0006943}
-  m_Suspension:
-    m_DampingRatio: 0.7
-    m_Frequency: 2
-    m_Angle: 90
-  m_UseMotor: 0
-  m_Motor:
-    m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
 --- !u!1 &5687926942147314031
 GameObject:
   m_ObjectHideFlags: 0

@@ -642,5 +642,7 @@ PrefabInstance:
       propertyPath: _sceneNetworkObjects.Array.size
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1359469361482046774, guid: 3c26c790069be2a42970f39db5bd07f8, type: 3}
+    - {fileID: 8564881247592008571, guid: 3c26c790069be2a42970f39db5bd07f8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3c26c790069be2a42970f39db5bd07f8, type: 3}
